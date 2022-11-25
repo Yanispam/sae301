@@ -249,7 +249,7 @@ class __TwigTemplate_c5c3543e3e127022bbc60fca6897ab9b extends Template
         // line 198
         if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 198, $this->source); })()), "user", [], "any", false, false, false, 198)) {
             // line 199
-            echo "        <div><a href=\"logout\"><button class=\"btn btn-secondary\">Déconnexion</button></a></div>
+            echo "        <div><a href=\"logout\">Déconnexion</a></div>
     ";
         } else {
             // line 201
@@ -492,7 +492,7 @@ class __TwigTemplate_c5c3543e3e127022bbc60fca6897ab9b extends Template
     {% endif %}
 
     {% if app.user %}
-        <div><a href=\"logout\"><button class=\"btn btn-secondary\">Déconnexion</button></a></div>
+        <div><a href=\"logout\">Déconnexion</a></div>
     {% else %}
         <div id=\"border\"><a href=\"login\"><i class=\"fa-solid fa-circle-user\"></i>   Connexion / </a>
             <a href=\"register\">Inscription</a></div>
