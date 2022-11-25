@@ -86,66 +86,21 @@ class __TwigTemplate_0f75655eb368e3dd82492ed58b112644 extends Template
 
         // line 6
         echo "<style>
-    .carte {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        margin-top: 50px;
-        width: 17vw;
-        height: 50vh;
-        border: solid black 2px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        transition: 500ms;
-    }
     .carte:hover {
         box-shadow: 10px 10px 0px 0px #3FFFBA,10px 10px 0px 2.5px black;
         transform: translateX(-10px);
         transition: 500ms;
     }
-    .carte button{
-        margin: 10px 0;
-        width: 90%;
-        margin: auto;
-        border: solid #343434 2px;
-        background-color: transparent;
-        cursor: pointer;
-        padding: 5px;
-    }
-    .carte button:hover{
-        background-color: #343434;
-        color: #fff;
-    }
-    .carte .texte{
-        margin-left: 18px;
-    }
     .img {
         background-color: grey;
         background-image: url(\"";
-        // line 41
+        // line 14
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("Image/gospel.jpeg"), "html", null, true);
         echo "\");
         background-size: cover;
         margin: auto;
         width: 94%;
         height: 68%;
-    }
-    #manifs {
-        margin: auto;
-        width: 80vw;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    #titre {
-        margin: auto;
-        display: flex;
-        height: 10vh;
-        width: 30vw;
-        text-align: center;
-        border-bottom: black solid 2px;
-    }
-    #titre h2{
-        margin: auto;
     }
     #concert {
         background-color: #3FFFBA;
@@ -289,7 +244,7 @@ class __TwigTemplate_0f75655eb368e3dd82492ed58b112644 extends Template
 
     public function getDebugInfo()
     {
-        return array (  125 => 41,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  98 => 14,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -300,37 +255,10 @@ class __TwigTemplate_0f75655eb368e3dd82492ed58b112644 extends Template
 
 {% block body %}
 <style>
-    .carte {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        margin-top: 50px;
-        width: 17vw;
-        height: 50vh;
-        border: solid black 2px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        transition: 500ms;
-    }
     .carte:hover {
         box-shadow: 10px 10px 0px 0px #3FFFBA,10px 10px 0px 2.5px black;
         transform: translateX(-10px);
         transition: 500ms;
-    }
-    .carte button{
-        margin: 10px 0;
-        width: 90%;
-        margin: auto;
-        border: solid #343434 2px;
-        background-color: transparent;
-        cursor: pointer;
-        padding: 5px;
-    }
-    .carte button:hover{
-        background-color: #343434;
-        color: #fff;
-    }
-    .carte .texte{
-        margin-left: 18px;
     }
     .img {
         background-color: grey;
@@ -339,24 +267,6 @@ class __TwigTemplate_0f75655eb368e3dd82492ed58b112644 extends Template
         margin: auto;
         width: 94%;
         height: 68%;
-    }
-    #manifs {
-        margin: auto;
-        width: 80vw;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    #titre {
-        margin: auto;
-        display: flex;
-        height: 10vh;
-        width: 30vw;
-        text-align: center;
-        border-bottom: black solid 2px;
-    }
-    #titre h2{
-        margin: auto;
     }
     #concert {
         background-color: #3FFFBA;

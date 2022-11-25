@@ -19,8 +19,12 @@ return [
     'app_accueil' => [[], ['_controller' => 'App\\Controller\\AccueilController::index'], [], [['text', '/accueil']], [], [], []],
     'app_admin' => [[], ['_controller' => 'App\\Controller\\AdminController::index'], [], [['text', '/admin']], [], [], []],
     'app_concert' => [[], ['_controller' => 'App\\Controller\\ConcertController::index'], [], [['text', '/concert']], [], [], []],
+    'app_exposition' => [[], ['_controller' => 'App\\Controller\\ExpositionController::index'], [], [['text', '/exposition']], [], [], []],
     'app_manifs' => [[], ['_controller' => 'App\\Controller\\ManifsController::index'], [], [['text', '/manifs']], [], [], []],
+    'app_panier' => [[], ['_controller' => 'App\\Controller\\PanierController::index'], [], [['text', '/panier']], [], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
+    'app_spectacle' => [[], ['_controller' => 'App\\Controller\\SpectacleController::index'], [], [['text', '/spectacle']], [], [], []],
+    'app_theatre' => [[], ['_controller' => 'App\\Controller\\TheatreController::index'], [], [['text', '/theatre']], [], [], []],
 ];

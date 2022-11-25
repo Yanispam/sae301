@@ -17,10 +17,14 @@ return [
         '/accueil' => [[['_route' => 'app_accueil', '_controller' => 'App\\Controller\\AccueilController::index'], null, null, null, false, false, null]],
         '/admin' => [[['_route' => 'app_admin', '_controller' => 'App\\Controller\\AdminController::index'], null, null, null, false, false, null]],
         '/concert' => [[['_route' => 'app_concert', '_controller' => 'App\\Controller\\ConcertController::index'], null, null, null, false, false, null]],
+        '/exposition' => [[['_route' => 'app_exposition', '_controller' => 'App\\Controller\\ExpositionController::index'], null, null, null, false, false, null]],
         '/manifs' => [[['_route' => 'app_manifs', '_controller' => 'App\\Controller\\ManifsController::index'], null, null, null, false, false, null]],
+        '/panier' => [[['_route' => 'app_panier', '_controller' => 'App\\Controller\\PanierController::index'], null, null, null, false, false, null]],
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
+        '/spectacle' => [[['_route' => 'app_spectacle', '_controller' => 'App\\Controller\\SpectacleController::index'], null, null, null, false, false, null]],
+        '/theatre' => [[['_route' => 'app_theatre', '_controller' => 'App\\Controller\\TheatreController::index'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
