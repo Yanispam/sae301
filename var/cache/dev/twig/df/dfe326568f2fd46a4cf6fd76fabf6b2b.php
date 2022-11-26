@@ -119,7 +119,7 @@ class __TwigTemplate_dbbbaa7d2e0a87cbfb90cec3ea39ec3f extends Template
             <input type=\"email\" value=\"";
         // line 20
         echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 20, $this->source); })()), "html", null, true);
-        echo "\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" placeholder=\"sucemaqueue@gmail.com\" autofocus>
+        echo "\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" placeholder=\"name@gserver.com\" autofocus>
         </div>
         <div>
             <label for=\"inputPassword\">Mot de passe</label>
@@ -187,7 +187,7 @@ class __TwigTemplate_dbbbaa7d2e0a87cbfb90cec3ea39ec3f extends Template
         <h1 class=\"h3 mb-3 font-weight-normal\">Se connecter</h1>
         <div>
             <label for=\"inputEmail\">Email</label>
-            <input type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" placeholder=\"sucemaqueue@gmail.com\" autofocus>
+            <input type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" placeholder=\"name@gserver.com\" autofocus>
         </div>
         <div>
             <label for=\"inputPassword\">Mot de passe</label>

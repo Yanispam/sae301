@@ -1046,3 +1046,17 @@ d3dd79,172.20.0.1,GET,http://localhost:8088/sae301/index.php/login,1669390263,,2
 f97420,172.20.0.1,GET,http://localhost:8088/sae301/index.php/spectacle,1669396991,,200
 bfe4e0,172.20.0.1,GET,http://localhost:8088/sae301/index.php/exposition,1669396993,,200
 3d2242,172.20.0.1,GET,http://localhost:8088/sae301/index.php/theatre,1669396995,,200
+4f35e6,172.20.0.1,GET,http://localhost:8088/sae301/index.php/concert,1669415959,,200
+3985f6,172.20.0.1,GET,http://localhost:8088/sae301/index.php/login,1669415983,,200
+329601,172.20.0.1,GET,http://localhost:8088/sae301/index.php/register,1669415989,,200
+57a1c6,172.20.0.1,GET,http://localhost:8088/sae301/index.php/panier,1669415992,,200
+411953,172.20.0.1,GET,http://localhost:8088/sae301/index.php/concert,1669415994,,200
+315404,172.20.0.1,GET,http://localhost:8088/sae301/index.php/spectacle,1669415999,,200
+90c12a,172.20.0.1,GET,http://localhost:8088/sae301/index.php/exposition,1669415999,,200
+a9a594,172.20.0.1,GET,http://localhost:8088/sae301/index.php/theatre,1669416000,,200
+7ba80f,172.20.0.1,GET,http://localhost:8088/sae301/index.php/concert,1669416001,,200
+45c1e5,172.20.0.1,GET,http://localhost:8088/sae301/index.php/spectacle,1669457225,,200
+49ed5a,172.20.0.1,GET,http://localhost:8088/sae301/index.php/exposition,1669457230,,200
+e9de55,172.20.0.1,GET,http://localhost:8088/sae301/index.php/theatre,1669457231,,200
+e855ba,172.20.0.1,GET,http://localhost:8088/sae301/index.php/login,1669457232,,200
+4bcd60,172.20.0.1,GET,http://localhost:8088/sae301/index.php/login,1669457287,,200
