@@ -16,8 +16,6 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
-<<<<<<< HEAD
-=======
     'app_accueil' => [[], ['_controller' => 'App\\Controller\\AccueilController::index'], [], [['text', '/accueil']], [], [], []],
     'app_admin' => [[], ['_controller' => 'App\\Controller\\AdminController::index'], [], [['text', '/admin']], [], [], []],
     'app_concert' => [[], ['_controller' => 'App\\Controller\\ConcertController::index'], [], [['text', '/concert']], [], [], []],
@@ -29,5 +27,4 @@ return [
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
     'app_spectacle' => [[], ['_controller' => 'App\\Controller\\SpectacleController::index'], [], [['text', '/spectacle']], [], [], []],
     'app_theatre' => [[], ['_controller' => 'App\\Controller\\TheatreController::index'], [], [['text', '/theatre']], [], [], []],
->>>>>>> f016e93007c01f23c9666b10c614ff5e03d8e9bd
 ];

@@ -1075,3 +1075,7 @@ f887d2,172.20.0.1,GET,http://localhost:8088/sae301/index.php/theatre,1669470854,
 =======
 >>>>>>> f016e93007c01f23c9666b10c614ff5e03d8e9bd
 >>>>>>> 45754b3bccb001334a8b7817b3fd6401e00e75ce
+aacac9,172.20.0.1,GET,http://localhost:8088/sae301/index.php/theatre,1669630317,,200
+0c86ca,172.20.0.1,GET,http://localhost:8088/sae301/index.php/concert,1669630357,,200
+ab9631,172.20.0.1,GET,http://localhost:8088/sae301/index.php/spectacle,1669630360,,200
+a077d6,172.20.0.1,GET,http://localhost:8088/sae301/index.php/exposition,1669630361,,200
