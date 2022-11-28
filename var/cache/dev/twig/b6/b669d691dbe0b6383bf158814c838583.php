@@ -86,48 +86,142 @@ class __TwigTemplate_0f75655eb368e3dd82492ed58b112644 extends Template
 
         // line 6
         echo "<style>
-    body {
-    }
-    .carte {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        margin-top: 50px;
-        width: 17vw;
-        height: 50vh;
-        border: solid black 2px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-    .carte button{
-        margin: 10px 0;
-        width: 90%;
-        margin: auto;
-        border: solid #343434 2px;
-        background-color: transparent;
-        cursor: pointer;
-        padding: 5px;
-    }
-    .carte button:hover{
-        background-color: #343434;
-        color: #fff;
+    .carte:hover {
+        box-shadow: 10px 10px 0px 0px #3FFFBA,10px 10px 0px 2.5px black;
+        transform: translateX(-10px);
+        transition: 500ms;
     }
     .img {
         background-color: grey;
+        background-image: url(\"";
+        // line 14
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("Image/gospel.jpeg"), "html", null, true);
+        echo "\");
+        background-size: cover;
         margin: auto;
-        width: 90%;
-        height: 65%;
+        width: 94%;
+        height: 68%;
+    }
+    #concert {
+        background-color: #3FFFBA;
+        padding: 23px;
+    }
+    #concert a{
+        color: #fff;
     }
 </style>
-
-<div class=\"carte\">
-    <div class=\"img\">
-
+    <div id=\"titre\">
+        <h2>Concerts</h2>
     </div>
-    <h4>AIMÉE – LA TOURNÉE</h4>
-    <p>artiste</p>
-    <p>artiste</p>
-    <p>artiste</p>
-    <button>Réserver</button>
+<div id=\"manifs\">
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
 </div>
 ";
         
@@ -150,7 +244,7 @@ class __TwigTemplate_0f75655eb368e3dd82492ed58b112644 extends Template
 
     public function getDebugInfo()
     {
-        return array (  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  98 => 14,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -161,48 +255,139 @@ class __TwigTemplate_0f75655eb368e3dd82492ed58b112644 extends Template
 
 {% block body %}
 <style>
-    body {
-    }
-    .carte {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        margin-top: 50px;
-        width: 17vw;
-        height: 50vh;
-        border: solid black 2px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-    .carte button{
-        margin: 10px 0;
-        width: 90%;
-        margin: auto;
-        border: solid #343434 2px;
-        background-color: transparent;
-        cursor: pointer;
-        padding: 5px;
-    }
-    .carte button:hover{
-        background-color: #343434;
-        color: #fff;
+    .carte:hover {
+        box-shadow: 10px 10px 0px 0px #3FFFBA,10px 10px 0px 2.5px black;
+        transform: translateX(-10px);
+        transition: 500ms;
     }
     .img {
         background-color: grey;
+        background-image: url(\"{{ asset('Image/gospel.jpeg') }}\");
+        background-size: cover;
         margin: auto;
-        width: 90%;
-        height: 65%;
+        width: 94%;
+        height: 68%;
+    }
+    #concert {
+        background-color: #3FFFBA;
+        padding: 23px;
+    }
+    #concert a{
+        color: #fff;
     }
 </style>
-
-<div class=\"carte\">
-    <div class=\"img\">
-
+    <div id=\"titre\">
+        <h2>Concerts</h2>
     </div>
-    <h4>AIMÉE – LA TOURNÉE</h4>
-    <p>artiste</p>
-    <p>artiste</p>
-    <p>artiste</p>
-    <button>Réserver</button>
+<div id=\"manifs\">
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
+    <div class=\"carte\">
+        <div class=\"img\">
+
+        </div>
+        <div class=\"texte\">
+            <h4>AIMÉE – LA TOURNÉE</h4>
+            <p>artiste</p>
+            <p>artiste</p>
+            <p>artiste</p>
+        </div>
+        <button>Réserver</button>
+    </div>
 </div>
 {% endblock %}
 ", "concert/index.html.twig", "/var/www/sae301/templates/concert/index.html.twig");

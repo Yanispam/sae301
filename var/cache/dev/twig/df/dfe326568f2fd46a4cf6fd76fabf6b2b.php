@@ -112,29 +112,35 @@ class __TwigTemplate_dbbbaa7d2e0a87cbfb90cec3ea39ec3f extends Template
     ";
         }
         // line 16
-        echo "
-    <h1 class=\"h3 mb-3 font-weight-normal\">Se connecter</h1>
-    <label for=\"inputEmail\">Email</label>
-    <input type=\"email\" value=\"";
-        // line 19
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 19, $this->source); })()), "html", null, true);
-        echo "\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" required autofocus>
-    <label for=\"inputPassword\">Mot de passe</label>
-    <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" required>
+        echo "    <div>
+        <h1 class=\"h3 mb-3 font-weight-normal\">Se connecter</h1>
+        <div>
+            <label for=\"inputEmail\">Email</label>
+            <input type=\"email\" value=\"";
+        // line 20
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 20, $this->source); })()), "html", null, true);
+        echo "\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" placeholder=\"name@gserver.com\" autofocus>
+        </div>
+        <div>
+            <label for=\"inputPassword\">Mot de passe</label>
+            <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" placeholder=\"toto1234\">
+        </div>
 
-    <input type=\"hidden\" name=\"_csrf_token\"
-           value=\"";
-        // line 24
+        <input type=\"hidden\" name=\"_csrf_token\"
+               value=\"";
+        // line 28
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\"
-    >
+        >
 
-    ";
-        // line 37
-        echo "
-    <button class=\"btn btn-lg btn-primary\" type=\"submit\">
-        Se connecter
-    </button>
+        ";
+        // line 41
+        echo "        <div>
+            <button class=\"btn btn-lg btn-primary\" type=\"submit\">
+                Se connecter
+            </button>
+        </div>
+    </div>
 </form>
 ";
         
@@ -157,7 +163,7 @@ class __TwigTemplate_dbbbaa7d2e0a87cbfb90cec3ea39ec3f extends Template
 
     public function getDebugInfo()
     {
-        return array (  134 => 37,  128 => 24,  120 => 19,  115 => 16,  107 => 13,  104 => 12,  102 => 11,  99 => 10,  93 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  138 => 41,  132 => 28,  121 => 20,  115 => 16,  107 => 13,  104 => 12,  102 => 11,  99 => 10,  93 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -177,31 +183,37 @@ class __TwigTemplate_dbbbaa7d2e0a87cbfb90cec3ea39ec3f extends Template
             Tu es connecté avec {{ app.user.userIdentifier }}, <a href=\"{{ path('app_logout') }}\">Logout</a>
         </div>
     {% endif %}
-
-    <h1 class=\"h3 mb-3 font-weight-normal\">Se connecter</h1>
-    <label for=\"inputEmail\">Email</label>
-    <input type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" required autofocus>
-    <label for=\"inputPassword\">Mot de passe</label>
-    <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" required>
-
-    <input type=\"hidden\" name=\"_csrf_token\"
-           value=\"{{ csrf_token('authenticate') }}\"
-    >
-
-    {#
-        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
-        See https://symfony.com/doc/current/security/remember_me.html
-
-        <div class=\"checkbox mb-3\">
-            <label>
-                <input type=\"checkbox\" name=\"_remember_me\"> Remember me
-            </label>
+    <div>
+        <h1 class=\"h3 mb-3 font-weight-normal\">Se connecter</h1>
+        <div>
+            <label for=\"inputEmail\">Email</label>
+            <input type=\"email\" value=\"{{ last_username }}\" name=\"email\" id=\"inputEmail\" class=\"form-control\" autocomplete=\"email\" placeholder=\"name@gserver.com\" autofocus>
         </div>
-    #}
+        <div>
+            <label for=\"inputPassword\">Mot de passe</label>
+            <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" autocomplete=\"current-password\" placeholder=\"toto1234\">
+        </div>
 
-    <button class=\"btn btn-lg btn-primary\" type=\"submit\">
-        Se connecter
-    </button>
+        <input type=\"hidden\" name=\"_csrf_token\"
+               value=\"{{ csrf_token('authenticate') }}\"
+        >
+
+        {#
+            Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+            See https://symfony.com/doc/current/security/remember_me.html
+
+            <div class=\"checkbox mb-3\">
+                <label>
+                    <input type=\"checkbox\" name=\"_remember_me\"> Remember me
+                </label>
+            </div>
+        #}
+        <div>
+            <button class=\"btn btn-lg btn-primary\" type=\"submit\">
+                Se connecter
+            </button>
+        </div>
+    </div>
 </form>
 {% endblock %}
 ", "security/login.html.twig", "/var/www/sae301/templates/security/login.html.twig");

@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="60eacede-4547-4d1a-8e40-54884cf677f6" name="Changes" comment="mise à jour" />
+=======
+    <list default="true" id="60eacede-4547-4d1a-8e40-54884cf677f6" name="Changes" comment="mise à jour">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/dev.log" afterDir="false" />
+    </list>
+>>>>>>> f016e93007c01f23c9666b10c614ff5e03d8e9bd
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +227,11 @@
       <workItem from="1669143158332" duration="5584000" />
       <workItem from="1669200422960" duration="1262000" />
       <workItem from="1669201700545" duration="6952000" />
+<<<<<<< HEAD
       <workItem from="1669373695311" duration="13000" />
+=======
+      <workItem from="1669372946096" duration="9941000" />
+>>>>>>> f016e93007c01f23c9666b10c614ff5e03d8e9bd
     </task>
     <task id="LOCAL-00001" summary="mise à jour">
       <created>1669188603887</created>
