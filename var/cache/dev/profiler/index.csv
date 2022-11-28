@@ -1060,3 +1060,7 @@ a9a594,172.20.0.1,GET,http://localhost:8088/sae301/index.php/theatre,1669416000,
 e9de55,172.20.0.1,GET,http://localhost:8088/sae301/index.php/theatre,1669457231,,200
 e855ba,172.20.0.1,GET,http://localhost:8088/sae301/index.php/login,1669457232,,200
 4bcd60,172.20.0.1,GET,http://localhost:8088/sae301/index.php/login,1669457287,,200
+4428d5,172.20.0.1,GET,http://localhost:8088/sae301/index.php/concert,1669461715,,200
+864426,172.20.0.1,GET,http://localhost:8088/sae301/index.php/spectacle,1669470828,,200
+4b5310,172.20.0.1,GET,http://localhost:8088/sae301/index.php/exposition,1669470852,,200
+f887d2,172.20.0.1,GET,http://localhost:8088/sae301/index.php/theatre,1669470854,,200
