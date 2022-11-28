@@ -685,3 +685,8 @@ f192d2,172.20.0.1,GET,http://localhost:8088/sae301/index.php/concert,1669367794,
 8417d6,172.20.0.1,GET,http://localhost:8088/sae301/index.php/concert,1669368194,,200
 76d228,172.20.0.1,GET,http://localhost:8088/sae301/index.php/concert,1669368208,,200
 27517b,172.20.0.1,GET,http://localhost:8088/sae301/index.php/concert,1669368219,,200
+e529fc,172.18.0.1,GET,http://localhost:8088/aube_culture/,1669373829,,404
+18b96a,172.18.0.1,GET,http://localhost:8088/aube_culture/index.php/accueil,1669373834,b673a5,404
+b673a5,172.18.0.1,GET,http://localhost:8088/aube_culture/index.php/accueil,1669373834,,404
+385be8,172.18.0.1,GET,http://localhost:8088/aube_culture/index.php/accueil,1669373838,8ed1b5,404
+8ed1b5,172.18.0.1,GET,http://localhost:8088/aube_culture/index.php/accueil,1669373838,,404
