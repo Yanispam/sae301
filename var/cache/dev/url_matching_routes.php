@@ -14,6 +14,8 @@ return [
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/xdebug' => [[['_route' => '_profiler_xdebug', '_controller' => 'web_profiler.controller.profiler::xdebugAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
+<<<<<<< HEAD
+=======
         '/accueil' => [[['_route' => 'app_accueil', '_controller' => 'App\\Controller\\AccueilController::index'], null, null, null, false, false, null]],
         '/admin' => [[['_route' => 'app_admin', '_controller' => 'App\\Controller\\AdminController::index'], null, null, null, false, false, null]],
         '/concert' => [[['_route' => 'app_concert', '_controller' => 'App\\Controller\\ConcertController::index'], null, null, null, false, false, null]],
@@ -25,6 +27,7 @@ return [
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
         '/spectacle' => [[['_route' => 'app_spectacle', '_controller' => 'App\\Controller\\SpectacleController::index'], null, null, null, false, false, null]],
         '/theatre' => [[['_route' => 'app_theatre', '_controller' => 'App\\Controller\\TheatreController::index'], null, null, null, false, false, null]],
+>>>>>>> f016e93007c01f23c9666b10c614ff5e03d8e9bd
     ],
     [ // $regexpList
         0 => '{^(?'

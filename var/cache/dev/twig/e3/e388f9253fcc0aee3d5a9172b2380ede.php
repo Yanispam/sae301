@@ -825,6 +825,6 @@ class __TwigTemplate_d0d9145fd4d0a592ccba33f1c438da09 extends Template
         </table>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/config.html.twig", "/var/www/sae301/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
+", "@WebProfiler/Collector/config.html.twig", "/var/www/aube_culture/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
     }
 }
