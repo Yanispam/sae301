@@ -11,11 +11,12 @@
         }
         .img {
             background-color: grey;
-            background-image: url("{{ asset('Image/gospel.jpeg') }}");
+            background-image: url("{{ asset('Image/{{ Manifs.affiche }}') }}");
             background-size: cover;
             margin: auto;
             width: 94%;
-            height: 68%;
+            height: 65%;
+            margin-top: 8px;
         }
         #theatre {
             background-color: #9747FF;
@@ -29,113 +30,19 @@
         <h2>Théâtres</h2>
     </div>
     <div id="manifs">
+        {% for Manifs in Manifs %}
         <div class="carte">
             <div class="img">
 
             </div>
             <div class="texte">
-                <h4>AIMÉE – LA TOURNÉE</h4>
-                <p>artiste</p>
-                <p>artiste</p>
-                <p>artiste</p>
+                <h4>{{ Manifs.titre }}</h4>
+                <p>{{ Manifs.heure }}</p>
+                <p>{{ Manifs.date }}</p>
+                <p>{{ Manifs.prix }} €</p>
             </div>
             <button onclick="window.location.href = 'panier';">Réserver</button>
         </div>
-        <div class="carte">
-            <div class="img">
-
-            </div>
-            <div class="texte">
-                <h4>AIMÉE – LA TOURNÉE</h4>
-                <p>artiste</p>
-                <p>artiste</p>
-                <p>artiste</p>
-            </div>
-            <button>Réserver</button>
-        </div>
-        <div class="carte">
-            <div class="img">
-
-            </div>
-            <div class="texte">
-                <h4>AIMÉE – LA TOURNÉE</h4>
-                <p>artiste</p>
-                <p>artiste</p>
-                <p>artiste</p>
-            </div>
-            <button>Réserver</button>
-        </div>
-        <div class="carte">
-            <div class="img">
-
-            </div>
-            <div class="texte">
-                <h4>AIMÉE – LA TOURNÉE</h4>
-                <p>artiste</p>
-                <p>artiste</p>
-                <p>artiste</p>
-            </div>
-            <button>Réserver</button>
-        </div>
-        <div class="carte">
-            <div class="img">
-
-            </div>
-            <div class="texte">
-                <h4>AIMÉE – LA TOURNÉE</h4>
-                <p>artiste</p>
-                <p>artiste</p>
-                <p>artiste</p>
-            </div>
-            <button>Réserver</button>
-        </div>
-        <div class="carte">
-            <div class="img">
-
-            </div>
-            <div class="texte">
-                <h4>AIMÉE – LA TOURNÉE</h4>
-                <p>artiste</p>
-                <p>artiste</p>
-                <p>artiste</p>
-            </div>
-            <button>Réserver</button>
-        </div>
-        <div class="carte">
-            <div class="img">
-
-            </div>
-            <div class="texte">
-                <h4>AIMÉE – LA TOURNÉE</h4>
-                <p>artiste</p>
-                <p>artiste</p>
-                <p>artiste</p>
-            </div>
-            <button>Réserver</button>
-        </div>
-        <div class="carte">
-            <div class="img">
-
-            </div>
-            <div class="texte">
-                <h4>AIMÉE – LA TOURNÉE</h4>
-                <p>artiste</p>
-                <p>artiste</p>
-                <p>artiste</p>
-            </div>
-            <button>Réserver</button>
-        </div>
-        <div class="carte">
-            <div class="img">
-
-            </div>
-            <div class="texte">
-                <h4>AIMÉE – LA TOURNÉE</h4>
-                <p>artiste</p>
-                <p>artiste</p>
-                <p>artiste</p>
-            </div>
-            <button>Réserver</button>
-        </div>
+        {% endfor %}
     </div>
 {% endblock %}

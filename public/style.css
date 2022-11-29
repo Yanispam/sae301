@@ -98,8 +98,8 @@ nav {
     flex-direction: column;
     margin: auto;
     margin-top: 50px;
-    width: 17vw;
-    height: 50vh;
+    width: 18vw;
+    height: 52vh;
     border: solid black 2px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: 500ms;
@@ -112,6 +112,7 @@ nav {
     background-color: transparent;
     cursor: pointer;
     padding: 5px;
+    margin-bottom: 8px;
 }
 .carte button:hover{
     background-color: #343434;
