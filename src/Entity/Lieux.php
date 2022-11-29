@@ -102,4 +102,12 @@ class Lieux
 
         return $this;
     }
+
+    /**
+     * @param int|null $id
+     */
+    public function __toString(): string
+    {
+        return $this->adresse;
+    }
 }

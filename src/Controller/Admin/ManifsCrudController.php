@@ -20,14 +20,14 @@ class ManifsCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         return [
-            IdField::new('id'),
             TextField::new('genre'),
             TextField::new('titre'),
+            TextField::new('prix'),
             TextField::new('heure'),
             TextField::new('date'),
             TextEditorField::new('description'),
-            ImageField::new('affiche'),
-            AssociationField::new('lieu_id', 'lieu.id')
+            ImageField::new('affiche')->setBasePath('Image')->setUploadDir('public/Image/'),
+            AssociationField::new('lieu', 'Lieu')
         ];
     }
     /*
