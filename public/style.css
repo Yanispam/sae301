@@ -59,18 +59,19 @@ nav {
 }
 
 .btn {
-    border: 0;
-    background: pink;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    margin: 10px 0;
+    width: 100%;
+    margin: auto;
+    border: solid #343434 2px;
+    background-color: transparent;
     cursor: pointer;
+    padding: 5px;
+    margin-bottom: 8px;
+    padding: 10px;
 }
-
-.btn.btn-secondary {
-    background: transparent;
-    border: 2px solid pink;
-    color: #000;
+.btn:hover {
+    background-color: #343434;
+    color: #fff;
 }
 #manifs {
      margin: auto;
@@ -121,9 +122,31 @@ nav {
 form{
     display: flex;
     flex-direction: column;
+    margin: auto;
+    border: #000 3px solid;
+    border-radius: 10px;
+    width: 50vw;
+    height: 50vh;
+}
+form #auto {
+    margin: auto auto;
 }
 form div {
-    margin: auto;
+    margin: 15px auto;
+}
+#flex {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    flex-direction: column;
+}
+#inputEmail {
+    width: 100%;
+    padding: 10px;
+}
+#inputPassword {
+    width: 100%;
+    padding: 10px;
 }
 
 @media all and (max-width: 991px) {
