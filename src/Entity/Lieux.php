@@ -108,6 +108,6 @@ class Lieux
      */
     public function __toString(): string
     {
-        return $this->adresse;
+        return $this->lieu;
     }
 }

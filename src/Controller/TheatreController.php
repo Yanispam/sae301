@@ -19,4 +19,13 @@ class TheatreController extends AbstractController
             'Manifs' => $Manifs,
         ]);
     }
+    #[Route('/theatre/{$id}', name: 'app_fdp')]
+    public function afficherDetail(ManifsRepository $ManifsRepository, $id): Response
+    {
+
+        $Manifs = $ManifsRepository->find($id);
+        return $this->render('theatre/manifsdetails.html.twig', [
+            'Manifs' => $Manifs,
+        ]);
+    }
 }
