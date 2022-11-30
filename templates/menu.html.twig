@@ -6,25 +6,22 @@
         <i class="fas fa-bars ouvrir"></i>
         <i class="fas fa-times fermer"></i>
     </div>
-    <div class="menu-container">
-        <div class="search-bar">
-            <img src="{{ asset('Image/assets/search.png') }}" alt="search-icon">
-            <input type="text" placeholder="Rechercher...">
-        </div>
-        <div class="menu">
-            <div id="theatre"><a href="theatre">Théâtre</a></div>
-            {% if is_granted("ROLE_ADMIN") %}
-                <div><a href="admin"><i class="fa-solid fa-lock"></i></a></div>
-            {% endif %}
+    <div class="menu">
+        <div id="concert"><a href="concert">Concert</a></div>
+        <div id="spectacle"><a href="spectacle">Spectacle</a></div>
+        <div id="exposition"><a href="exposition">Exposition</a></div>
+        <div id="theatre"><a href="theatre">Théâtre</a></div>
+    {% if is_granted("ROLE_ADMIN") %}
+        <div><a href="admin"><i class="fa-solid fa-lock"></i></a></div>
+    {% endif %}
 
-            {% if app.user %}
-                <div><a href="logout">Déconnexion</a></div>
-            {% else %}
-                <div id="border"><a href="login"><i class="fa-solid fa-circle-user"></i>   Connexion / </a>
-                    <a href="register">Inscription</a></div>
-            {% endif %}
+    {% if app.user %}
+        <div><a href="logout">Déconnexion</a></div>
+    {% else %}
+        <div id="border"><a href="login"><i class="fa-solid fa-circle-user"></i>   Connexion / </a>
+            <a href="register">Inscription</a></div>
+    {% endif %}
             <div><a href="panier"><i class="fa-solid fa-cart-shopping"></i> Panier</a></div>
-        </div>
     </div>
 </nav>
 <script>
