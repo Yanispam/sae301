@@ -12,7 +12,7 @@
             <input type="text" placeholder="Rechercher...">
         </div>
         <div class="menu">
-            <div id="theatre"><a href="theatre">Théâtre</a></div>
+            <a href="theatre" class="nav-link evenement-nav-link">Théâtre</a>
             {% if is_granted("ROLE_ADMIN") %}
                 <div><a href="admin"><i class="fa-solid fa-lock"></i></a></div>
             {% endif %}
@@ -20,11 +20,10 @@
             {% if app.user %}
                 <div><a href="logout">Déconnexion</a></div>
             {% else %}
-                <div id="border"><a href="login"><i class="fa-solid fa-circle-user"></i>   Connexion / </a>
-                    <a href="register">Inscription</a></div>
+                <a href="login" class="nav-link"><i class="fa-sharp fa-solid fa-right-to-bracket"></i>   Connexion</a>
+                    <a href="register" class="nav-link"><i class="fa-sharp fa-solid fa-user-plus"></i>   Inscription</a>
             {% endif %}
-            <div><a href="panier"><i class="fa-solid fa-cart-shopping"></i> Panier <span id='panier'>0</span></a></div>
-        </div>
+            <a href="panier" class="nav-link"><i class="fa-solid fa-cart-shopping"></i> Panier <span id='panier'> 0</span></a>
 
     </div>
 </nav>
