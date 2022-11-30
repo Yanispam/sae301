@@ -1,20 +1,46 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ManifsController!{% endblock %}
+{% block title %}Les Évènements {% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <style>
+        .carte:hover {
+            box-shadow: 10px 10px 0px 0px #9747FF,10px 10px 0px 2.5px black;
+            transform: translateX(-10px);
+            transition: 500ms;
+        }
+        .img {
+            background-color: grey;
+            background-size: cover;
+            margin: auto;
+            width: 94%;
+            height: 65%;
+            margin-top: 8px;
+            overflow: hidden;
+        }
+        .img img{
+            width: 100%;
+            margin: auto;
+        }
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/sae301/src/Controller/ManifsController.php'|file_link(0) }}">src/Controller/ManifsController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/sae301/templates/manifs/index.html.twig'|file_link(0) }}">templates/manifs/index.html.twig</a></code></li>
-    </ul>
-</div>
+    </style>
+    <div id="titre">
+        <h2>Évènements</h2>
+    </div>
+    <div id="manifs">
+        {% for Manifs in Manifs %}
+            <div class="carte">
+                <div class="img">
+                    <img src=" {{ asset("Image/#{ Manifs.affiche }") }}">
+                </div>
+                <div class="texte">
+                    <h4>{{ Manifs.titre }}</h4>
+                    <p>{{ Manifs.heure }}</p>
+                    <p>{{ Manifs.date }}</p>
+                    <p>{{ Manifs.prix }} €</p>
+                </div>
+                <button onclick="window.location.href ='manifs/{{ Manifs.id }}';">Réserver</button>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
