@@ -86,10 +86,12 @@ table td {
 }
 .menu-container .menu {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
-  width: 100%;
-  height: inherit;
+  padding-left: 30px;
+  width: 40%;
+  height: 48.5px;
 }
 .menu-container .menu a {
   color: #000;
