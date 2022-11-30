@@ -19,7 +19,7 @@ class TheatreController extends AbstractController
             'Manifs' => $Manifs,
         ]);
     }
-    #[Route('/theatre/{$id}', name: 'app_fdp')]
+    #[Route('/theatre/{$id}', name: 'app_details')]
     public function afficherDetail(ManifsRepository $ManifsRepository, $id): Response
     {
 
