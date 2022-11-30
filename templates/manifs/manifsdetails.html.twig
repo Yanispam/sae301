@@ -3,13 +3,26 @@
 {% block title %}Détails{% endblock %}
 
 {% block body %}
+    <script type="text/javascript" src="{{ asset('scriptgeneral.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('scriptpagearticles.js') }}"></script>
     <style>
         .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
     </style>
 
     <div class="example-wrapper">
+        <img src=" {{ asset("Image/#{ Manifs.affiche }") }}">
         <h4>{{ Manifs.titre }}</h4>
+        <h4>{{ Manifs.genre }}</h4>
+        <p>{{ Manifs.heure }}</p>
+        <p>{{ Manifs.date }}</p>
+        <p>{{ Manifs.prix }} €</p>
+        <p>{{ Manifs.description }}</p>
+        <p>{{ Manifs.lieu }}</p>
+        <span id="article">vis bois</span> - <span id="prix">4</span>€
+        x<input type="number" value="1" min="1" max="99" id="qte">
+        <input type="hidden" id="id" value="{{ Manifs.id }}">
+        <button id="ajout">ajouter au panier</button>
 
     </div>
 {% endblock %}
