@@ -14,7 +14,7 @@
         <div class="menu">
             <a href="manifs" class="nav-link evenement-nav-link">Evenements</a>
             {% if is_granted("ROLE_ADMIN") %}
-                <div><a href="admin"><i class="fa-solid fa-lock"></i></a></div>
+                <div><a href="admin"><i class="fa-solid fa-lock"></i>Admin</a></div>
             {% endif %}
 
             {% if app.user %}

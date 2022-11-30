@@ -126,14 +126,11 @@ table td {
 }
 
 .btn {
-  margin: 10px 0;
   width: 100%;
-  margin: auto;
-  border: solid #343434 2px;
+  height: 50px;
+  border: solid #343434 3px;
   background-color: transparent;
   cursor: pointer;
-  padding: 5px;
-  margin-bottom: 8px;
   padding: 10px;
 }
 .btn:hover {
@@ -152,13 +149,27 @@ table td {
 #titre {
   margin: auto;
   display: flex;
-  height: 10vh;
-  width: 30vw;
+  height: 25vh;
   text-align: center;
-  border-bottom: black solid 2px;
+  color: white;
+  font-family: "Oscan Expanded Regular";
+  background-color: #9747FF;
+  margin-top: 40px;
 }
 #titre h2 {
   margin: auto;
+}
+
+#titre-connexion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oscan Expanded Regular";
+  margin-top: 40px;
+  background-color: #343434;
+  color: white;
+  height: 25vh;
+  text-align: center;
 }
 
 .carte {
@@ -191,36 +202,39 @@ table td {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  border: #000 3px solid;
-  border-radius: 10px;
-  width: 50vw;
-  height: 50vh;
+  width: 20vw;
+  height: 25vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 form #auto {
-  margin: auto auto;
-}
-form div {
-  margin: 15px auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
 #flex {
   display: flex;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   flex-direction: column;
 }
 
 #inputEmail {
   width: 100%;
   padding: 10px;
+  height: 50px;
+  border: #343434 solid 3px;
 }
 
 #inputPassword {
   width: 100%;
   padding: 10px;
+  height: 50px;
+  border: #343434 solid 3px;
 }
 #inputPassword table {
   width: 50%;
