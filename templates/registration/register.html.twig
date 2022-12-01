@@ -4,13 +4,19 @@
 
 {% block body %}
 <div id="flex">
-
+        <div id="titre-connexion">
+                <h1>S'inscrire</h1>
+        </div>
     {{ form_start(registrationForm) }}
-        <h1>S'inscrire</h1>
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Mot de passe '
-        }) }}
+        <div id="form-container">
+                {{ form_row(registrationForm.email, {
+                        placeholder: 'Email'
+                }) }}
+                {{ form_row(registrationForm.plainPassword, {
+                        label: 'Mot de passe ',
+                        placeholder: 'Mot de passe'
+                }) }}
+        </div>
         {{ form_row(registrationForm.agreeTerms, {
             label: 'Accepter les termes '
         }) }}
