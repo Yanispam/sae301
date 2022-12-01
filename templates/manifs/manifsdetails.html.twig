@@ -8,9 +8,12 @@
         .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
     </style>
 
+    <div id="manif-titre">
+        <h1>{{ Manifs.titre }}</h1>
+        <h2>{{ Manifs.auteur }}</h2>
+    </div>
+    <img src=" {{ asset("Image/#{ Manifs.affiche }") }}" id="affiche">
     <div class="example-wrapper">
-        <img src=" {{ asset("Image/#{ Manifs.affiche }") }}" id="affiche">
-        <h4 id="titre">{{ Manifs.titre }}</h4>
         <h4>{{ Manifs.genre }}</h4>
         <p>{{ Manifs.heure }}</p>
         <p>{{ Manifs.date }}</p>
