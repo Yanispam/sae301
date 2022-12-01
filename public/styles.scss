@@ -35,6 +35,12 @@ table {
     text-align: center;
   }
 }
+
+h1, h2, h3, h4
+{
+  font-weight: normal;
+}
+
 #bas {
   border: none;
 }
@@ -178,7 +184,7 @@ table {
   margin-top: 50px;
   width: 18vw;
   height: 52vh;
-  border: solid black 2px;
+  border: solid #343434 2px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 500ms;
   h4 {
@@ -267,6 +273,26 @@ td {
 
 #bas {
   border: none;
+}
+
+#manif-titre
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 25vh;
+  text-align: left;
+  font-family: "Oscan Expanded Regular";
+  background-color: #9747FF;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+#affiche {
+  transform: scale(30%);
+  position: absolute;
 }
 
   @media all and (max-width: 991px) {
