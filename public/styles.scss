@@ -116,6 +116,9 @@ table {
     .evenement-nav-link:hover {
       background-color: #9747FF;
     }
+    .lieux-nav-link:hover {
+      background-color: #FF4B3F;
+    }
   }
 }
 
@@ -140,6 +143,20 @@ table {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+#titre1 {
+  margin: auto;
+  display: flex;
+  height: 25vh;
+  text-align: center;
+  color: white;
+  font-family: "Oscan Expanded Regular";
+  font-size: 24px;
+  background-color: #FF4B3F;
+  margin-top: 40px;
+  h2 {
+    margin: auto;
+  }
 }
 #titre {
   margin: auto;

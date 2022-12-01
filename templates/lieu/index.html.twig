@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les Lieux {% endblock %}
+
+{% block body %}
+    <style>
+        .carte:hover {
+            box-shadow: 10px 10px 0px 0px #FF4B3F,10px 10px 0px 2.5px black;
+            transform: translateX(-10px);
+            transition: 500ms;
+        }
+        .img {
+            background-color: grey;
+            background-size: cover;
+            margin: auto;
+            width: 94%;
+            height: 65%;
+            margin-top: 8px;
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+        .img img{
+            width: 100%;
+            margin: auto;
+        }
+
+    </style>
+    <div id="titre1">
+        <h2>Lieux</h2>
+    </div>
+    <div id="manifs">
+        {% for Lieux in Lieux %}
+            <div class="carte">
+{#                <div class="img">#}
+{#                    <img src=" {{ asset("Image/#{ Lieux.affiche }") }}">#}
+{#                </div>#}
+                <div class="texte">
+                    <h4>{{ Lieux.lieu }}</h4>
+                    <p>{{ Lieux.adresse }}</p>
+                    <p>{{ Lieux.capacite }}</p>
+                </div>
+                <button onclick="window.location.href ='manifs/{{ Lieux.id }}';">Voir les détails</button>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

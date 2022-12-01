@@ -124,6 +124,9 @@ table td {
 .menu-container .menu .evenement-nav-link:hover {
   background-color: #9747FF;
 }
+.menu-container .menu .lieux-nav-link:hover {
+  background-color: #FF4B3F;
+}
 
 .btn {
   width: 100%;
@@ -146,6 +149,21 @@ table td {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+#titre1 {
+  margin: auto;
+  display: flex;
+  height: 25vh;
+  text-align: center;
+  color: white;
+  font-family: "Oscan Expanded Regular";
+  font-size: 24px;
+  background-color: #FF4B3F;
+  margin-top: 40px;
+}
+#titre1 h2 {
+  margin: auto;
 }
 
 #titre {
