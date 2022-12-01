@@ -31,15 +31,15 @@
     <div id="manifs">
         {% for Lieux in Lieux %}
             <div class="carte">
-{#                <div class="img">#}
-{#                    <img src=" {{ asset("Image/#{ Lieux.affiche }") }}">#}
-{#                </div>#}
+                <div class="img">
+                   <img src=" {{ asset("Image/#{ Lieux.affiche }") }}">
+                </div>
                 <div class="texte">
                     <h4>{{ Lieux.lieu }}</h4>
                     <p>{{ Lieux.adresse }}</p>
                     <p>{{ Lieux.capacite }}</p>
                 </div>
-                <button onclick="window.location.href ='manifs/{{ Lieux.id }}';">Voir les détails</button>
+                <button onclick="window.location.href ='lieu/{{ Lieux.id }}';">Voir les détails</button>
             </div>
         {% endfor %}
     </div>
