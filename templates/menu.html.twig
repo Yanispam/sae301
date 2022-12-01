@@ -12,18 +12,18 @@
             <input type="text" placeholder="Rechercher...">
         </div>
         <div class="menu">
-            <a href="manifs" class="nav-link evenement-nav-link">Evenements</a>
+            <a href="/sae301/index.php/manifs" class="nav-link evenement-nav-link">Evenements</a>
             {% if is_granted("ROLE_ADMIN") %}
-                <div><a href="admin"><i class="fa-solid fa-lock"></i>Admin</a></div>
+                <div><a href="/sae301/index.php/admin"><i class="fa-solid fa-lock"></i>Admin</a></div>
             {% endif %}
 
             {% if app.user %}
-                <div><a href="logout">Déconnexion</a></div>
+                <div><a href="/sae301/index.php/logout">Déconnexion</a></div>
             {% else %}
-                <a href="login" class="nav-link"><i class="fa-sharp fa-solid fa-right-to-bracket"></i>   Connexion</a>
-                    <a href="register" class="nav-link"><i class="fa-sharp fa-solid fa-user-plus"></i>   Inscription</a>
+                <a href="/sae301/index.php/login" class="nav-link"><i class="fa-sharp fa-solid fa-right-to-bracket"></i>   Connexion</a>
+                    <a href="/sae301/index.php/register" class="nav-link"><i class="fa-sharp fa-solid fa-user-plus"></i>   Inscription</a>
             {% endif %}
-            <a href="panier" class="nav-link"><i class="fa-solid fa-cart-shopping"></i> Panier <span id='panier'> 0</span></a>
+            <a href="/sae301/index.php/panier" class="nav-link"><i class="fa-solid fa-cart-shopping"></i> Panier <span id='panier'> 0</span></a>
 
     </div>
 </nav>

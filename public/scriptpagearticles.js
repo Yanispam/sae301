@@ -1,8 +1,9 @@
 document.getElementById('ajout').addEventListener('click',function() {                                                              
     var id = document.getElementById('id').value
+    var affiche= document.getElementById('affiche').innerHTML
     var titre= document.getElementById('titre').innerHTML
     var prix= document.getElementById('prix').innerHTML
-    console.log( id + " " + titre + " " + prix )
+    console.log( id + " " + titre + " " + prix + " " + affiche)
     console.log('click')
 
     index = montab.findIndex(element => element.id == id); //trouver l'article dans la liste du panier

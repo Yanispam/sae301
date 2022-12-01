@@ -10,6 +10,7 @@ var totalgeneral=0
 montab.forEach(uneinfo => {  
 
     html = `<tr id="${uneinfo.id}">
+    <td>${uneinfo.affiche}</td>
     <td>${uneinfo.titre}</td>
     <td><button class="moins">-</button><span>${uneinfo.quantite}</span><button class="plus">+</button></td>
     <td ><span class="unitaire">${uneinfo.prix}</span>€</td>
@@ -63,7 +64,8 @@ montab.forEach(uneinfo => {
             totalgeneral -= 1*prix
             document.querySelector('#total').innerHTML=totalgeneral
         })
-        }
+}
+
 function recupCookie(nom){
 
     if(document.cookie.length === 0)return null;
