@@ -4,6 +4,9 @@
 
 {% block body %}
 <div id="flex">
+    <div id="titre-connexion">
+        <h2>Se connecter</h2>
+    </div>
     <form method="post">
         {% if error %}
             <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
@@ -15,12 +18,13 @@
             </div>
         {% endif %}
         <div id="auto">
-            <h1 class="h3 mb-3 font-weight-normal">Se connecter</h1>
-            <div>
-                <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" placeholder="Email" autofocus>
-            </div>
-            <div>
-                <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" placeholder="Mot de Passe">
+            <label for="email">Email</label>
+            <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" placeholder="Email" autofocus>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" placeholder="Mot de passe">
+            <div id="password_checkbox">
+                <input type="checkbox" name="show_password" onclick="showPassword()">
+                <label for="show_password">Afficher le mot de passe</label>
             </div>
 
             <input type="hidden" name="_csrf_token"
@@ -37,11 +41,9 @@
                     </label>
                 </div>
             #}
-            <div>
                 <button class="btn" type="submit">
                     Se connecter
                 </button>
-            </div>
         </div>
     </form>
 </div>

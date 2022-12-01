@@ -120,15 +120,15 @@ table {
 }
 
 .btn {
-  margin: 10px 0;
   width: 100%;
-  margin: auto;
-  border: solid #343434 2px;
+  height: 50px;
+  border: solid #343434 3px;
   background-color: transparent;
   cursor: pointer;
-  padding: 5px;
-  margin-bottom: 8px;
   padding: 10px;
+  font-size: 14px;
+  font-family: "Oscan Expanded Regular";
+
   &:hover {
     background-color: #343434;
     color: #fff;
@@ -144,13 +144,27 @@ table {
 #titre {
   margin: auto;
   display: flex;
-  height: 10vh;
-  width: 30vw;
+  height: 25vh;
   text-align: center;
-  border-bottom: black solid 2px;
+  color: white;
+  font-family: "Oscan Expanded Regular";
+  background-color: #9747FF;
+  margin-top: 40px;
   h2 {
     margin: auto;
   }
+}
+#titre-connexion
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oscan Expanded Regular";
+  margin-top: 40px;
+  background-color: #343434;
+  color: white;
+  height: 25vh;
+  text-align: center;
 }
 .carte {
   .texte {
@@ -165,6 +179,9 @@ table {
   border: solid black 2px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 500ms;
+  h4 {
+    font-family: "Oscan Expanded Regular";
+  }
   button {
     margin: 10px 0;
     width: 90%;
@@ -181,46 +198,50 @@ table {
   }
 }
 form {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  border: #000 3px solid;
-  border-radius: 10px;
-  width: 50vw;
-  height: 50vh;
-  #auto {
-    margin: auto auto;
-  }
-  div {
-    margin: 15px auto;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  #auto
+  {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
   }
 }
 #flex {
   display: flex;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   flex-direction: column;
 }
 #inputEmail {
   width: 100%;
   padding: 10px;
+  height: 50px;
+  border: #343434 solid 3px;
 }
 #inputPassword {
   width: 100%;
   padding: 10px;
+  height: 50px;
+  border: #343434 solid 3px;
+}
 
-  table {
-    width: 50%;
-  }
+table {
+  width: 50%;
+}
 
-  td {
-    border: 1px solid;
-    text-align: center;
-  }
+td {
+  border: 1px solid;
+  text-align: center;
+}
 
-  #bas {
-    border: none;
-  }
+#bas {
+  border: none;
+}
 
   @media all and (max-width: 991px) {
     header {
@@ -338,6 +359,6 @@ form {
       font-size: 2rem;
     }
   }
-}
+
 
 
