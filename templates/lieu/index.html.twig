@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Les Évènements {% endblock %}
+{% block title %}Les Lieux {% endblock %}
 
 {% block body %}
     <style>
         .carte:hover {
-            box-shadow: 10px 10px 0px 0px #9747FF,10px 10px 0px 2.5px black;
+            box-shadow: 10px 10px 0px 0px #FF4B3F,10px 10px 0px 2.5px black;
             transform: translateX(-10px);
             transition: 500ms;
         }
@@ -25,22 +25,21 @@
         }
 
     </style>
-    <div id="titre">
-        <h2>Evenements</h2>
+    <div id="titre1">
+        <h2>Lieux</h2>
     </div>
     <div id="manifs">
-        {% for Manifs in Manifs %}
+        {% for Lieux in Lieux %}
             <div class="carte">
-                <div class="img">
-                    <img src=" {{ asset("Image/#{ Manifs.affiche }") }}">
-                </div>
+{#                <div class="img">#}
+{#                    <img src=" {{ asset("Image/#{ Lieux.affiche }") }}">#}
+{#                </div>#}
                 <div class="texte">
-                    <h4>{{ Manifs.titre }}</h4>
-                    <p>{{ Manifs.heure }}</p>
-                    <p>{{ Manifs.date }}</p>
-                    <p>{{ Manifs.prix }} €</p>
+                    <h4>{{ Lieux.lieu }}</h4>
+                    <p>{{ Lieux.adresse }}</p>
+                    <p>{{ Lieux.capacite }}</p>
                 </div>
-                <button onclick="window.location.href ='manifs/{{ Manifs.id }}';">Voir les détails</button>
+                <button onclick="window.location.href ='manifs/{{ Lieux.id }}';">Voir les détails</button>
             </div>
         {% endfor %}
     </div>
