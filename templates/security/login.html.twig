@@ -19,9 +19,13 @@
         {% endif %}
         <div id="auto">
             <label for="email">Email</label>
-                <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" placeholder="Email" autofocus>
+            <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" placeholder="Email" autofocus>
             <label for="password">Mot de passe</label>
-                <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" placeholder="Mot de passe">
+            <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" placeholder="Mot de passe">
+            <div id="password_checkbox">
+                <input type="checkbox" name="show_password" onclick="showPassword()">
+                <label for="show_password">Afficher le mot de passe</label>
+            </div>
 
             <input type="hidden" name="_csrf_token"
                    value="{{ csrf_token('authenticate') }}"

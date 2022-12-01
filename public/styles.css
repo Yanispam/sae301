@@ -132,6 +132,8 @@ table td {
   background-color: transparent;
   cursor: pointer;
   padding: 10px;
+  font-size: 14px;
+  font-family: "Oscan Expanded Regular";
 }
 .btn:hover {
   background-color: #343434;
@@ -186,6 +188,9 @@ table td {
 .carte .texte {
   margin-left: 18px;
 }
+.carte h4 {
+  font-family: "Oscan Expanded Regular";
+}
 .carte button {
   margin: 10px 0;
   width: 90%;
@@ -203,7 +208,6 @@ table td {
 
 form {
   width: 20vw;
-  height: 25vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -236,52 +240,56 @@ form #auto {
   height: 50px;
   border: #343434 solid 3px;
 }
-#inputPassword table {
+
+table {
   width: 50%;
 }
-#inputPassword td {
+
+td {
   border: 1px solid;
   text-align: center;
 }
-#inputPassword #bas {
+
+#bas {
   border: none;
 }
+
 @media all and (max-width: 991px) {
-  #inputPassword header {
+  header {
     background: transparent;
   }
-  #inputPassword .toggle {
+  .toggle {
     display: block;
     font-size: 2rem;
     cursor: pointer;
     position: relative;
     z-index: 20;
   }
-  #inputPassword .logo {
+  .logo {
     position: relative;
     z-index: 20;
   }
-  #inputPassword .ouvrir {
+  .ouvrir {
     display: block;
     font-size: 100px;
     margin-right: 30px;
     margin-top: 10px;
   }
-  #inputPassword .fermer {
+  .fermer {
     display: none;
     font-size: 110px;
     margin-right: 30px;
   }
-  #inputPassword .open .ouvrir {
+  .open .ouvrir {
     display: none;
   }
-  #inputPassword .open .fermer {
+  .open .fermer {
     display: block;
   }
-  #inputPassword .open .menu {
+  .open .menu {
     transform: translateX(0);
   }
-  #inputPassword .menu {
+  .menu {
     position: absolute;
     display: flex;
     top: 0;
@@ -295,47 +303,47 @@ form #auto {
     transform: translateX(-100%);
     transition: transform 1s;
   }
-  #inputPassword .menu div {
+  .menu div {
     display: flex;
     width: 100%;
     height: 5vh;
     text-align: center;
   }
-  #inputPassword .menu #concert:hover {
+  .menu #concert:hover {
     background-color: #3FFFBA;
   }
-  #inputPassword .menu #concert:hover a {
+  .menu #concert:hover a {
     color: #fff;
   }
-  #inputPassword .menu #spectacle:hover {
+  .menu #spectacle:hover {
     background-color: #FF4B3F;
   }
-  #inputPassword .menu #spectacle:hover a {
+  .menu #spectacle:hover a {
     color: #fff;
   }
-  #inputPassword .menu #exposition:hover {
+  .menu #exposition:hover {
     background-color: #FF9B3F;
   }
-  #inputPassword .menu #exposition:hover a {
+  .menu #exposition:hover a {
     color: #fff;
   }
-  #inputPassword .menu #theatre:hover {
+  .menu #theatre:hover {
     background-color: #9747FF;
   }
-  #inputPassword .menu #theatre:hover a {
+  .menu #theatre:hover a {
     color: #fff;
   }
-  #inputPassword .menu #border {
+  .menu #border {
     border-top: #000 solid 6px;
     border-bottom: #000 solid 6px;
   }
-  #inputPassword .menu a {
+  .menu a {
     font-size: 3rem;
     text-decoration: none;
     color: #000;
     margin: auto;
   }
-  #inputPassword .btn {
+  .btn {
     font-size: 2rem;
   }
 }

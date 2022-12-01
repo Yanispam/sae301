@@ -126,6 +126,9 @@ table {
   background-color: transparent;
   cursor: pointer;
   padding: 10px;
+  font-size: 14px;
+  font-family: "Oscan Expanded Regular";
+
   &:hover {
     background-color: #343434;
     color: #fff;
@@ -176,6 +179,9 @@ table {
   border: solid black 2px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 500ms;
+  h4 {
+    font-family: "Oscan Expanded Regular";
+  }
   button {
     margin: 10px 0;
     width: 90%;
@@ -193,7 +199,6 @@ table {
 }
 form {
   width: 20vw;
-  height: 25vh;
   margin-left: auto;
   margin-right: auto;
   #auto
@@ -223,19 +228,20 @@ form {
   padding: 10px;
   height: 50px;
   border: #343434 solid 3px;
+}
 
-  table {
-    width: 50%;
-  }
+table {
+  width: 50%;
+}
 
-  td {
-    border: 1px solid;
-    text-align: center;
-  }
+td {
+  border: 1px solid;
+  text-align: center;
+}
 
-  #bas {
-    border: none;
-  }
+#bas {
+  border: none;
+}
 
   @media all and (max-width: 991px) {
     header {
@@ -353,6 +359,6 @@ form {
       font-size: 2rem;
     }
   }
-}
+
 
 
