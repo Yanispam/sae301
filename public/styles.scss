@@ -182,7 +182,10 @@ table {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 500ms;
   h4 {
-    font-family: "Oscan Expanded Regular";
+    text-overflow: ellipsis;
+    width: inherit;
+    overflow: hidden;
+    white-space: nowrap;
   }
   button {
     margin: 10px 0;
