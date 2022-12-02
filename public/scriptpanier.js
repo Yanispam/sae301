@@ -9,13 +9,13 @@ document.getElementById('liste').value=JSON.stringify(montab);
 var totalgeneral=0
 montab.forEach(uneinfo => {  
 
-    html = `<tr id="${uneinfo.id}">
+    html = `<div><tr id="${uneinfo.id}">
     <td><img src="${uneinfo.affiche}"></td>
     <td>${uneinfo.titre}</td>
     <td><button class="moins">-</button><span>${uneinfo.quantite}</span><button class="plus">+</button></td>
     <td ><span class="unitaire">${uneinfo.prix}</span>€</td>
     <td><span class="prix">${uneinfo.quantite * uneinfo.quantite}</span>€</td>
-    </tr>`;
+    </tr></div>`;
 
     document.getElementById('zone').innerHTML += html
     totalgeneral += uneinfo.prix * uneinfo.quantite
