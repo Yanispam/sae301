@@ -36,7 +36,7 @@ montab.forEach(uneinfo => {
             this.parentNode.parentNode.querySelector('.prix').innerHTML=total;
 
             id = this.parentNode.parentNode.id; // recupere l'id de l'article cliqué
-            index = montab.findIndex(element => element.id ==id); //trouver l'article dans la liste du panier
+            index = montab.findIndex(element => element.id ===id); //trouver l'article dans la liste du panier
             montab[index].quantite	= parseInt(montab[index].quantite) +1; //incrementer la quantité
             document.cookie = "panier="+JSON.stringify(montab)+"; path=/"  // sauvegarde des infos dans le cookie "liste"
             document.getElementById('liste').value=JSON.stringify(montab); // sauver montab pour le formulaire
