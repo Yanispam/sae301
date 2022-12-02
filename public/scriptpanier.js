@@ -9,13 +9,13 @@ document.getElementById('liste').value=JSON.stringify(montab);
 var totalgeneral=0
 montab.forEach(uneinfo => {  
 
-    html = `<tr id="${uneinfo.id}">
+    html = `<div><tr id="${uneinfo.id}">
     <td><img src="${uneinfo.affiche}"></td>
     <td>${uneinfo.titre}</td>
     <td><button class="moins">-</button><span>${uneinfo.quantite}</span><button class="plus">+</button></td>
     <td ><span class="unitaire">${uneinfo.prix}</span>€</td>
     <td><span class="prix">${uneinfo.quantite * uneinfo.quantite}</span>€</td>
-    </tr>`;
+    </tr></div>`;
 
     document.getElementById('zone').innerHTML += html
     totalgeneral += uneinfo.prix * uneinfo.quantite
@@ -36,7 +36,7 @@ montab.forEach(uneinfo => {
             this.parentNode.parentNode.querySelector('.prix').innerHTML=total;
 
             id = this.parentNode.parentNode.id; // recupere l'id de l'article cliqué
-            index = montab.findIndex(element => element.id ==id); //trouver l'article dans la liste du panier
+            index = montab.findIndex(element => element.id ===id); //trouver l'article dans la liste du panier
             montab[index].quantite	= parseInt(montab[index].quantite) +1; //incrementer la quantité
             document.cookie = "panier="+JSON.stringify(montab)+"; path=/"  // sauvegarde des infos dans le cookie "liste"
             document.getElementById('liste').value=JSON.stringify(montab); // sauver montab pour le formulaire

@@ -24,6 +24,9 @@ class Lieux
     #[ORM\Column(length: 255)]
     private ?string $capacite = null;
 
+    #[ORM\Column(length: 50)]
+    private ?string $affiche = null;
+
     #[ORM\OneToMany(mappedBy: 'lieu', targetEntity: Manifs::class)]
     private Collection $manifs;
 
@@ -69,6 +72,18 @@ class Lieux
     public function setCapacite(string $capacite): self
     {
         $this->capacite = $capacite;
+
+        return $this;
+    }
+
+    public function getAffiche(): ?string
+    {
+        return $this->affiche;
+    }
+
+    public function setAffiche(string $affiche): self
+    {
+        $this->affiche = $affiche;
 
         return $this;
     }

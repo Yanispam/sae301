@@ -20,6 +20,7 @@
             margin-bottom: 5px;
         }
         .img img{
+            height: 100%;
             width: 100%;
             margin: auto;
         }
@@ -31,15 +32,15 @@
     <div id="manifs">
         {% for Lieux in Lieux %}
             <div class="carte">
-{#                <div class="img">#}
-{#                    <img src=" {{ asset("Image/#{ Lieux.affiche }") }}">#}
-{#                </div>#}
+                <div class="img">
+                   <img src=" {{ asset("Image/#{ Lieux.affiche }") }}">
+                </div>
                 <div class="texte">
                     <h4>{{ Lieux.lieu }}</h4>
                     <p>{{ Lieux.adresse }}</p>
-                    <p>{{ Lieux.capacite }}</p>
+                    <p> Capacité : {{ Lieux.capacite }}</p>
                 </div>
-                <button onclick="window.location.href ='manifs/{{ Lieux.id }}';">Voir les détails</button>
+                <button onclick="window.location.href ='https://www.google.com/maps/search/listes+de+toutes+les+salles+de+troyes/@48.2766638,4.0819566,14z';">Voir les détails</button>
             </div>
         {% endfor %}
     </div>
