@@ -22,3 +22,17 @@
   font-weight: normal;
   src: local('Oscan Expanded Rounded'), url('Oscan Expanded/OscanExpandedRounded-BW6yw.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Gopher Medium';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Gopher Regular'), url('Gopher/Gopher-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gopher Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gopher Bold'), url('Gopher/Gopher-Bold.woff') format('woff');
+}
