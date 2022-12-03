@@ -16,13 +16,13 @@ class SearchManifsType extends AbstractType
             ->add('mots', SearchType::class, [
                 'label' => false,
                 'attr' => [
-                    'class' => 'search-bar',
+                    'class' => 'search-bar2',
                     'placeholder' => 'Entrez un ou plusieurs mots-clés'
                 ]
             ])
             ->add('Rechercher', SubmitType::class,[
                 'attr' => [
-                    'class' => 'bouton'
+                    'class' => 'btn'
                 ]
             ])
         ;
