@@ -302,30 +302,35 @@ td {
   border: none;
 }
 
-#manif-container {
-  display: flex;
-}
-#manif-container #manif-titre {
+#manif-titre {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
   height: 25vh;
   width: 100%;
   text-align: left;
-  font-family: "Gopher Bold";
+  font-family: "Gopher Bold", sans-serif;
   background-color: #9747FF;
-  font-size: 20px;
+  font-size: 24px;
   position: relative;
   text-align: center;
 }
-#manif-container #manif-titre h1, #manif-container #manif-titre h2 {
+#manif-titre h1, #manif-titre h2 {
   text-align: left;
   float: left;
   display: inline-block;
 }
-#manif-container #affiche {
-  height: 300px;
-  position: absolute;
+
+.example-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+#affiche {
+  height: 500px;
   z-index: 1;
 }
 
