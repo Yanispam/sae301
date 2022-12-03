@@ -80,7 +80,7 @@ class Manifs
         return $this->auteur;
     }
 
-    public function setAuteur(): ?string
+    public function setAuteur(string $auteur): self
     {
         $this->auteur = $auteur;
 
