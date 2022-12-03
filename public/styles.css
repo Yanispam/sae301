@@ -327,17 +327,6 @@ td {
   display: inline-block;
 }
 
-.example-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-}
-
-#affiche {
-  height: 500px;
-  z-index: 1;
-}
-
 .site-footer {
   background-color: #26272b;
   padding: 45px 0 20px;
@@ -494,6 +483,17 @@ td {
     font-weight: 600;
   }
 }
+.example-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+#affiche {
+  height: 500px;
+  z-index: 1;
+}
+
 @media all and (max-width: 991px) {
   header {
     background: transparent;
