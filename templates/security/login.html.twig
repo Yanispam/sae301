@@ -16,7 +16,7 @@
             <div class="mb-3">
                 Tu es connecté avec {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
             </div>
-        {% endif %}
+        {% else %}
         <div id="auto">
             <label for="email">Email</label>
             <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" placeholder="Email" autofocus>
@@ -45,6 +45,7 @@
                     Se connecter
                 </button>
         </div>
+        {% endif %}
     </form>
 </div>
 {% endblock %}

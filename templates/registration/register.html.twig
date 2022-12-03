@@ -3,6 +3,11 @@
 {% block title %}S'inscrire{% endblock %}
 
 {% block body %}
+{% if app.user %}
+<div class="mb-3">
+        Tu es connecté avec {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
+</div>
+{% else %}
 <div id="flex">
         <div id="titre-connexion">
                 <h1>S'inscrire</h1>
@@ -24,4 +29,5 @@
         <button type="submit" class="btn">S'inscrire</button>
     {{ form_end(registrationForm) }}
 </div>
+{% endif %}
 {% endblock %}
