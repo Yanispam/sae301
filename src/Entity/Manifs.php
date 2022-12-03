@@ -7,9 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ManifsRepository::class)]
 #[ORM\Table(name: "manifs")]
-#[ORM\Index(columns:["titre"], flags: ["fulltext"])]
-#[ORM\Index(columns:["genre"], flags: ["fulltext"])]
-#[ORM\Index(columns:["description"], flags: ["fulltext"])]
+#[ORM\Index(columns:["titre", "genre", "description"], flags: ["fulltext"])]
 class Manifs
 {
     #[ORM\Id]
@@ -44,6 +42,9 @@ class Manifs
     #[ORM\ManyToOne(inversedBy: 'manifs')]
     #[ORM\JoinColumn(nullable: false)]
     private ?lieux $lieu = null;
+
+    #[ORM\Column]
+    private ?int $active = null;
 
     public function getId(): ?int
     {
@@ -154,6 +155,18 @@ class Manifs
     public function setLieu(?lieux $lieu): self
     {
         $this->lieu = $lieu;
+
+        return $this;
+    }
+
+    public function getActive(): ?int
+    {
+        return $this->active;
+    }
+
+    public function setActive(int $active): self
+    {
+        $this->active = $active;
 
         return $this;
     }

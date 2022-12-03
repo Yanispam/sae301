@@ -38,6 +38,16 @@ class ManifsRepository extends ServiceEntityRepository
             $this->getEntityManager()->flush();
         }
     }
+    public function search($mots)
+    {
+        $query = $this->createQueryBuilder('m');
+        $query->where('m.active = 1');
+        if($mots != null) {
+            $query->andWhere('MATCH_AGAINST(m.titre, m.genre, m.description) AGAINST (:mots boolean)>0')
+                ->setParameter('mots', $mots);
+        }
+        return $query->getQuery()->getResult();
+    }
 
 //    /**
 //     * @return Manifs[] Returns an array of Manifs objects
@@ -63,4 +73,7 @@ class ManifsRepository extends ServiceEntityRepository
 //            ->getOneOrNullResult()
 //        ;
 //    }
+    private function setParameter(string $string, $mots)
+    {
+    }
 }
