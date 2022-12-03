@@ -285,13 +285,13 @@ form #auto {
 }
 
 form[name=registration_form] {
-  height: 34%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 form[name=registration_form] #form-container {
   margin-top: 40px;
+  height: fit-content;
 }
 form[name=registration_form] #form-container div {
   display: flex;
@@ -303,6 +303,9 @@ form[name=registration_form] #form-container div input {
   height: 50px;
   border: #343434 solid 3px;
   padding: 10px;
+}
+form[name=registration_form] #submit-form-container {
+  margin-top: 30px;
 }
 
 table {
@@ -342,6 +345,7 @@ td {
 .site-footer {
   background-color: #26272b;
   padding: 45px 0 20px;
+  margin-top: 50px;
   font-size: 15px;
   line-height: 24px;
   color: #737373;
@@ -495,15 +499,56 @@ td {
     font-weight: 600;
   }
 }
-.example-wrapper {
+.manif-container {
   display: flex;
-  justify-content: center;
+  margin: 20px;
+}
+.manif-container .desc-container {
+  padding: 50px;
   width: 50%;
+}
+.manif-container .details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: #343434 3px solid;
+  height: 200px;
+  padding: 10px;
+}
+.manif-container .details-container h4, .manif-container .details-container button, .manif-container .details-container #prix {
+  font-family: "Gopher Bold";
+}
+.manif-container .details-container button {
+  border: #343434 3px solid;
+  height: 40px;
+  width: 150px;
+  background-color: white;
+}
+.manif-container .details-container button:hover {
+  color: white;
+  background-color: #343434;
+  cursor: pointer;
 }
 
 #affiche {
   height: 500px;
   z-index: 1;
+}
+
+.img-accueil {
+  background-image: url("Image/image-accueil.jpg");
+  background-size: 100%;
+  background-position-y: 450px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gopher Bold";
+  font-size: 24px;
+  color: white;
+}
+.img-accueil h1 {
+  text-align: center;
 }
 
 @media all and (max-width: 991px) {
