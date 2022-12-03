@@ -296,33 +296,24 @@ td {
   border: none;
 }
 
-#manif-container
-{
+#manif-titre {
   display: flex;
-  #manif-titre
-  {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    height: 25vh;
-    width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 25vh;
+  width: 100%;
+  text-align: left;
+  font-family: "Gopher Bold", sans-serif;
+  background-color: #9747FF;
+  font-size: 24px;
+  position: relative;
+  text-align: center;
+  h1, h2 {
     text-align: left;
-    font-family: "Gopher Bold";
-    background-color: #9747FF;
-    font-size: 20px;
-    position: relative;
-    text-align: center;
-    h1, h2 {
-      text-align: left;
-      float: left;
-      display: inline-block;
-    }
-  }
-  #affiche
-  {
-    height: 300px;
-    position: absolute;
-    z-index: 1;
+    float: left;
+    display: inline-block;
   }
 }
 .site-footer {
@@ -493,122 +484,134 @@ td {
 }
 
 
-  @media all and (max-width: 991px) {
-    header {
-      background: transparent;
-    }
-    .toggle {
-      display: block;
-      font-size: 2rem;
-      cursor: pointer;
-      position: relative;
-      z-index: 20;
-    }
-    .logo {
-      position: relative;
-      z-index: 20;
-    }
+.example-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+#affiche {
+  height: 500px;
+  z-index: 1;
+}
+
+@media all and (max-width: 991px) {
+  header {
+    background: transparent;
+  }
+  .toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+  }
+  .logo {
+    position: relative;
+    z-index: 20;
+  }
+  .ouvrir {
+    display: block;
+    font-size: 100px;
+    margin-right: 30px;
+    margin-top: 10px;
+  }
+  .fermer {
+    display: none;
+    font-size: 110px;
+    margin-right: 30px;
+  }
+  .open {
     .ouvrir {
-      display: block;
-      font-size: 100px;
-      margin-right: 30px;
-      margin-top: 10px;
-    }
-    .fermer {
       display: none;
-      font-size: 110px;
-      margin-right: 30px;
     }
-    .open {
-      .ouvrir {
-        display: none;
-      }
 
-      .fermer {
-        display: block;
-      }
-
-      .menu {
-        transform: translateX(0);
-      }
+    .fermer {
+      display: block;
     }
+
     .menu {
-      position: absolute;
-      display: flex;
-      top: 0;
-      left: 0;
-      width: 80%;
-      height: 100vh;
-      border-right: #000 solid 6px;
-      background: #fff;
-      flex-direction: column;
-      justify-content: space-evenly;
-      transform: translateX(-100%);
-      transition: transform 1s;
-
-      div {
-        display: flex;
-        width: 100%;
-        height: 5vh;
-        text-align: center;
-      }
-
-      #concert {
-        &:hover {
-          background-color: #3FFFBA;
-
-          a {
-            color: #fff;
-          }
-        }
-      }
-
-      #spectacle {
-        &:hover {
-          background-color: #FF4B3F;
-
-          a {
-            color: #fff;
-          }
-        }
-      }
-
-      #exposition {
-        &:hover {
-          background-color: #FF9B3F;
-
-          a {
-            color: #fff;
-          }
-        }
-      }
-
-      #theatre {
-        &:hover {
-          background-color: #9747FF;
-
-          a {
-            color: #fff;
-          }
-        }
-      }
-
-      #border {
-        border-top: #000 solid 6px;
-        border-bottom: #000 solid 6px;
-      }
-
-      a {
-        font-size: 3rem;
-        text-decoration: none;
-        color: #000;
-        margin: auto;
-      }
-    }
-    .btn {
-      font-size: 2rem;
+      transform: translateX(0);
     }
   }
+  .menu {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    border-right: #000 solid 6px;
+    background: #fff;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transform: translateX(-100%);
+    transition: transform 1s;
+
+    div {
+      display: flex;
+      width: 100%;
+      height: 5vh;
+      text-align: center;
+    }
+
+    #concert {
+      &:hover {
+        background-color: #3FFFBA;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+    #spectacle {
+      &:hover {
+        background-color: #FF4B3F;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+    #exposition {
+      &:hover {
+        background-color: #FF9B3F;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+    #theatre {
+      &:hover {
+        background-color: #9747FF;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+    #border {
+      border-top: #000 solid 6px;
+      border-bottom: #000 solid 6px;
+    }
+
+    a {
+      font-size: 3rem;
+      text-decoration: none;
+      color: #000;
+      margin: auto;
+    }
+  }
+  .btn {
+    font-size: 2rem;
+  }
+}
+
 
 
 
