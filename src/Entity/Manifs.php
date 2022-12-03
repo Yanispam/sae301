@@ -6,6 +6,10 @@ use App\Repository\ManifsRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ManifsRepository::class)]
+#[ORM\Table(name: "manifs")]
+#[ORM\Index(columns:["titre"], flags: ["fulltext"])]
+#[ORM\Index(columns:["genre"], flags: ["fulltext"])]
+#[ORM\Index(columns:["description"], flags: ["fulltext"])]
 class Manifs
 {
     #[ORM\Id]
