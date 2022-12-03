@@ -5,19 +5,22 @@
 {% block body %}
 
     <div id="manif-titre">
-        <h1>{{ Manifs.titre }}</h1>
+        <h1 id="titre">{{ Manifs.titre }}</h1>
         <h2>{{ Manifs.auteur }}</h2>
     </div>
-    <div class="example-wrapper">
+    <div class="manif-container">
         <img src=" {{ asset("Image/#{ Manifs.affiche }") }}" id="affiche">
-        <p>{{ Manifs.description }}</p>
+        <div class="desc-container">
+            <h2>Description</h2>
+            <br>
+            <p class="description">{{ Manifs.description }}</p>
+        </div>
         <div class="details-container">
             <h4>{{ Manifs.genre }}</h4>
-            <p>{{ Manifs.heure }}</p>
-            <p>{{ Manifs.date }}</p>
-            <div><p id="prix">{{ Manifs.prix }}</p>€
-                x<input type="number" value="1" min="1" max="99" id="qte"></div>
-            <button id="ajout">ajouter au panier</button>
+            <p>{{ Manifs.date }} - {{ Manifs.heure }}</p>
+            <div><p id="prix">{{ Manifs.prix }}€ - x<input type="number" value="1" min="1" max="99" id="qte"></p></div>
+            <input type="hidden" id="id" value="{{ Manifs.id }}">
+            <button id="ajout">Réserver</button>
         </div>
 
     </div>

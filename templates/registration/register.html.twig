@@ -17,11 +17,14 @@
                         placeholder: 'Mot de passe'
                 }) }}
         </div>
-        {{ form_row(registrationForm.agreeTerms, {
-            label: 'Accepter les termes '
-        }) }}
+        <div id="submit-form-container">
+                {{ form_row(registrationForm.agreeTerms, {
+                        label: 'Accepter les termes '
+                }) }}
 
-        <button type="submit" class="btn">S'inscrire</button>
+                <button type="submit" class="btn">S'inscrire</button>
+        </div>
+
     {{ form_end(registrationForm) }}
 </div>
 {% endblock %}
