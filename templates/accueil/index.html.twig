@@ -13,14 +13,6 @@
 </div>
 
 <div class="event-accueil-container">
-    {% for Manifs in 0..5 %}
-        <div class="event-accueil">
-            <img src="{{ asset("Image/#{Manifs.affiche}") }}" alt="">
-            <h4>{{ Manifs.titre }}</h4>
-            <p>{{ Manifs.heure }}</p>
-            <p>{{ Manifs.date }}</p>
-            <p>{{ Manifs.prix }} €</p>
-        </div>
-    {% endfor %}
+
 </div>
 {% endblock %}
