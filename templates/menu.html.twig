@@ -2,6 +2,10 @@
     <div class="logo">
         <a href="accueil"><img src="{{ asset('Image/logo.png') }}"/></a>
     </div>
+    <div class="toggle">
+        <i class="fas fa-bars ouvrir"></i>
+        <i class="fas fa-times fermer"></i>
+    </div>
     <div class="menu-container">
         <div class="menu">
             <a href="/sae301/index.php/accueil" class="nav-link">Accueil</a>
@@ -21,10 +25,6 @@
             <a href="/sae301/index.php/panier" class="nav-link"><i class="fa-solid fa-cart-shopping"></i> Panier <span id='panier'> 0</span></a>
 
     </div>
-        <div class="toggle">
-            <i class="fas fa-bars ouvrir"></i>
-            <i class="fas fa-times fermer"></i>
-        </div>
 </nav>
 <script>
     let toggle = document.querySelector('.toggle');
