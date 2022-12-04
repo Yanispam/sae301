@@ -35,6 +35,7 @@ nav {
 
 table {
   width: 50%;
+  margin: auto;
 }
 table tr {
   border: 1px black solid;
@@ -42,6 +43,29 @@ table tr {
 table tr td {
   border: none;
   text-align: center;
+}
+table tr td .moins {
+  width: 30%;
+  height: 30px;
+  border: solid #343434 3px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Gopher Bold";
+}
+table tr td .plus {
+  width: 30%;
+  height: 30px;
+  border: solid #343434 3px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Gopher Bold";
+}
+table img {
+  width: 10vw;
 }
 
 #form {

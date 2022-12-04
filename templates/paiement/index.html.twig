@@ -14,14 +14,18 @@
         margin-top: 30px;
     }
 </style>
-
+    {% if app.user %}
 <div class="example-wrapper">
     <h3>Procéder au paiement :</h3>
     <form action="/sae301/index.php/merci">
         <label>Entrer votre mail PayPal :</label>
         <input type="email" required>
-        <input type="submit" value="Payer" required>
+        <input type="submit" value="Payer" class="btn" required>
     </form>
     <button onclick="window.location.href ='/sae301/index.php/panier';" class="btn">Revenir au panier</button>
 </div>
+    {% else %}
+        <h3>Veuillez vous connecter avant de poursuivre votre achat :</h3>
+        <button onclick="window.location.href ='/sae301/index.php/login';" class="btn">Se connecter</button>
+    {% endif %}
 {% endblock %}
