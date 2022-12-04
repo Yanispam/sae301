@@ -4,13 +4,16 @@
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; height: 80vh;}
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
 <div class="example-wrapper">
     {% if app.user %}
         <h3>Voici le détail de votre commande : </h3>
+            <div id="zone">
+
+            </div>
         <button onclick="window.location.href ='/sae301/index.php/panier';" class="btn">Revenir au panier</button>
         <button onclick="window.location.href ='/sae301/index.php/paiement';" class="btn">Passer au paiement</button>
     {% else %}
@@ -18,4 +21,5 @@
         <button onclick="window.location.href ='/sae301/index.php/login';" class="btn">Se connecter</button>
     {% endif %}
 </div>
+    <script type="text/javascript" src="{{ asset('scriptdetails.js') }}"></script>
 {% endblock %}
