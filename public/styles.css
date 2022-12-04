@@ -35,6 +35,7 @@ nav {
 
 table {
   width: 50%;
+  margin: auto;
 }
 table tr {
   border: 1px black solid;
@@ -42,6 +43,35 @@ table tr {
 table tr td {
   border: none;
   text-align: center;
+}
+table tr td .moins {
+  border: solid #343434 3px;
+  background-color: transparent;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Gopher Bold";
+}
+table tr td .moins:hover {
+  background-color: #343434;
+  color: #fff;
+}
+table tr td .plus {
+  border: solid #343434 3px;
+  background-color: transparent;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Gopher Bold";
+}
+table tr td .plus:hover {
+  background-color: #343434;
+  color: #fff;
+}
+table img {
+  width: 10vw;
 }
 
 #form {

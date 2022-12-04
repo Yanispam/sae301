@@ -30,12 +30,42 @@ nav {
   box-shadow: 3px 3px 6px -1px rgba(0, 0, 0, 0.25);}
 table {
   width: 50%;
+  margin: auto;
   tr {
     border: 1px black solid;
     td {
       border: none;
       text-align: center;
+      .moins{
+        border: solid #343434 3px;
+        background-color: transparent;
+        margin-left: 10px;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 14px;
+        font-family: "Gopher Bold";
+        &:hover {
+          background-color: #343434;
+          color: #fff;
+        }
+      }
+      .plus{
+        border: solid #343434 3px;
+        background-color: transparent;
+        margin-right: 10px;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 14px;
+        font-family: "Gopher Bold";
+        &:hover {
+          background-color: #343434;
+          color: #fff;
+        }
+      }
     }
+  }
+  img {
+    width: 10vw;
   }
 }
 #form {
