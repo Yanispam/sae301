@@ -45,24 +45,30 @@ table tr td {
   text-align: center;
 }
 table tr td .moins {
-  width: 30%;
-  height: 30px;
   border: solid #343434 3px;
   background-color: transparent;
+  margin-left: 10px;
   cursor: pointer;
   padding: 10px;
   font-size: 14px;
   font-family: "Gopher Bold";
 }
+table tr td .moins:hover {
+  background-color: #343434;
+  color: #fff;
+}
 table tr td .plus {
-  width: 30%;
-  height: 30px;
   border: solid #343434 3px;
   background-color: transparent;
+  margin-right: 10px;
   cursor: pointer;
   padding: 10px;
   font-size: 14px;
   font-family: "Gopher Bold";
+}
+table tr td .plus:hover {
+  background-color: #343434;
+  color: #fff;
 }
 table img {
   width: 10vw;

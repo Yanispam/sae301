@@ -37,24 +37,30 @@ table {
       border: none;
       text-align: center;
       .moins{
-        width: 30%;
-        height: 30px;
         border: solid #343434 3px;
         background-color: transparent;
+        margin-left: 10px;
         cursor: pointer;
         padding: 10px;
         font-size: 14px;
         font-family: "Gopher Bold";
+        &:hover {
+          background-color: #343434;
+          color: #fff;
+        }
       }
       .plus{
-        width: 30%;
-        height: 30px;
         border: solid #343434 3px;
         background-color: transparent;
+        margin-right: 10px;
         cursor: pointer;
         padding: 10px;
         font-size: 14px;
         font-family: "Gopher Bold";
+        &:hover {
+          background-color: #343434;
+          color: #fff;
+        }
       }
     }
   }
