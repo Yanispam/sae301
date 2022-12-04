@@ -215,8 +215,8 @@ h1, h2, h3
   flex-direction: column;
   margin: auto;
   margin-top: 50px;
-  width: 18vw;
-  height: 52vh;
+  width: 250px;
+  height: 450px;
   border: solid #343434 2px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 500ms;
@@ -409,6 +409,9 @@ ul{
     width: 50%;
     margin-bottom: 30px;
   }
+  carte {
+
+  }
 }
 @media(max-width: 574px){
   .footer-col{
@@ -456,6 +459,7 @@ ul{
 
 .img-accueil {
   background-image: url("Image/image-accueil.jpg");
+  background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
   height: 50vh;
@@ -601,7 +605,7 @@ ul{
     }
   }
   .btn {
-    font-size: 2rem;
+    font-size: 20px;
   }
 }
 
