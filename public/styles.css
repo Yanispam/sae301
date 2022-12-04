@@ -188,18 +188,12 @@ h1, h2, h3 {
 }
 
 #titre {
-  margin: auto;
   display: flex;
-  height: 25vh;
   text-align: center;
   color: white;
   font-family: "Gopher Bold";
   font-size: 24px;
   background-color: #9747FF;
-  margin-top: 40px;
-}
-#titre h2 {
-  margin: auto;
 }
 
 #titre-connexion {
@@ -331,12 +325,11 @@ td {
   color: white;
   height: 25vh;
   width: 100%;
-  text-align: left;
   font-family: "Gopher Bold", sans-serif;
   background-color: #9747FF;
   font-size: 24px;
   position: relative;
-  text-align: center;
+  margin-top: 40px;
 }
 #manif-titre h1, #manif-titre h2 {
   text-align: left;
@@ -479,7 +472,7 @@ ul {
 .img-accueil {
   background-image: url("Image/image-accueil.jpg");
   background-size: 100%;
-  background-position-y: 450px;
+  background-position: bottom;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -490,6 +483,15 @@ ul {
 }
 .img-accueil h1 {
   text-align: center;
+}
+
+.event-accueil {
+  display: flex;
+  height: 150px;
+  padding: 10px;
+}
+.event-accueil .event-accueil-dt {
+  padding-left: 10px;
 }
 
 @media all and (max-width: 991px) {

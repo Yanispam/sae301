@@ -26,7 +26,6 @@ class ManifsController extends AbstractController
             $Manifs = $ManifsRepository->search($search->get('mots')->getData());
         }
 
-
         return $this->render('manifs/index.html.twig', [
             'Manifs' => $Manifs,
             'form' => $form->createView()
