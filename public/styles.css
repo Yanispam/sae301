@@ -521,6 +521,7 @@ ul {
   .toggle {
     display: block;
     font-size: 60px;
+    margin-right: 20px;
     cursor: pointer;
     position: relative;
     z-index: 20;
@@ -548,7 +549,7 @@ ul {
   .open .fermer {
     display: block;
     z-index: 101;
-    transform: translate(-17%, -35%);
+    transform: translate(-180%, 0%);
     transition: transform 1s;
   }
   .open .menu {
