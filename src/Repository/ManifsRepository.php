@@ -73,7 +73,4 @@ class ManifsRepository extends ServiceEntityRepository
 //            ->getOneOrNullResult()
 //        ;
 //    }
-    private function setParameter(string $string, $mots)
-    {
-    }
 }
