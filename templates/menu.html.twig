@@ -4,21 +4,21 @@
     </div>
     <div class="menu-container">
         <div class="menu">
-            <a href="/sae301/index.php/accueil" class="nav-link">Accueil</a>
-            <a href="/sae301/index.php/manifs" class="nav-link evenement-nav-link">Évènements</a>
-            <a href="/sae301/index.php/lieu" class="nav-link lieux-nav-link">Lieux</a>
+            <a href="{{ path('app_accueil') }}" class="nav-link">Accueil</a>
+            <a href="{{ path('app_manifs') }}" class="nav-link evenement-nav-link">Évènements</a>
+            <a href="{{ path('app_lieu') }}" class="nav-link lieux-nav-link">Lieux</a>
             {% if is_granted("ROLE_ADMIN") %}
                 <a href="/sae301/index.php/admin" class="nav-link"><i class="fa-solid fa-lock"></i>Admin</a>
             {% endif %}
 
             {% if app.user %}
-                <a href="/sae301/index.php/compte" class="nav-link"><i class="fa-solid fa-user"></i>MonCompte</a>
-                <a href="/sae301/index.php/logout" class="nav-link">Déconnexion</a>
+                <a href="{{ path('app_compte') }}" class="nav-link"><i class="fa-solid fa-user"></i>MonCompte</a>
+                <a href="{{ path('app_logout') }}" class="nav-link">Déconnexion</a>
             {% else %}
-                <a href="/sae301/index.php/login" class="nav-link"><i class="fa-sharp fa-solid fa-right-to-bracket"></i>   Connexion</a>
-                    <a href="/sae301/index.php/register" class="nav-link"><i class="fa-sharp fa-solid fa-user-plus"></i>   Inscription</a>
+                <a href="{{ path('app_login') }}" class="nav-link"><i class="fa-sharp fa-solid fa-right-to-bracket"></i>   Connexion</a>
+                    <a href="{{ path('app_register') }}" class="nav-link"><i class="fa-sharp fa-solid fa-user-plus"></i>   Inscription</a>
             {% endif %}
-            <a href="/sae301/index.php/panier" class="nav-link"><i class="fa-solid fa-cart-shopping"></i> Panier <span id='panier'> 0</span></a>
+            <a href="{{ path('app_panier') }}" class="nav-link"><i class="fa-solid fa-cart-shopping"></i> Panier <span id='panier'> 0</span></a>
 
     </div>
         <div class="toggle">
